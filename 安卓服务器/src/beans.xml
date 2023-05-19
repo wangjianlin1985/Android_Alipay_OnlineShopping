@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-2.5.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+	<!-- <context:component-scan base-package="com.shuangyulin.action"/>  -->
+    <bean id="loginAction" class="com.shuangyulin.action.LoginAction" scope="prototype"></bean>
+    <bean id="changePasswordAction" class="com.shuangyulin.action.ChangePasswordAction" scope="prototype"></bean>
+    <bean id="userAction" class="com.shuangyulin.action.UserAction" scope="prototype"></bean>  
+    
+	<bean id="indexAction" class="com.shuangyulin.action.IndexAction" scope="prototype"></bean>
+    <bean id="productClassAction" class="com.shuangyulin.action.ProductClassAction" scope="prototype"></bean>
+    <bean id="productInfoAction" class="com.shuangyulin.action.ProductInfoAction" scope="prototype"></bean>
+    <bean id="yesOrNoAction" class="com.shuangyulin.action.YesOrNoAction" scope="prototype"></bean>
+    <bean id="memberInfoAction" class="com.shuangyulin.action.MemberInfoAction" scope="prototype"></bean>
+    <bean id="orderInfoAction" class="com.shuangyulin.action.OrderInfoAction" scope="prototype"></bean>
+    <bean id="orderStateAction" class="com.shuangyulin.action.OrderStateAction" scope="prototype"></bean>
+    <bean id="orderDetailAction" class="com.shuangyulin.action.OrderDetailAction" scope="prototype"></bean>
+    <bean id="productCartAction" class="com.shuangyulin.action.ProductCartAction" scope="prototype"></bean>
+    <bean id="evaluateAction" class="com.shuangyulin.action.EvaluateAction" scope="prototype"></bean>
+    <bean id="noticeAction" class="com.shuangyulin.action.NoticeAction" scope="prototype"></bean>
+ 
+	
+	  
+</beans>
